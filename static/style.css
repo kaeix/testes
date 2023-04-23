@@ -232,3 +232,32 @@ i.menu-mobile {
     background: #fff;
     border-radius: 50%;
 }
+
+.carousel-control-prev {
+    margin-left: -130px;
+    
+}
+
+.carousel-control-next {
+    margin-right: 530px;
+}
+
+.carousel-indicators {
+    margin-bottom: -60px;
+    margin-left: -460px;
+}
+@media (max-width: 1860px){
+    
+    .carousel-control-prev {
+        margin-left: 0;
+        
+    }
+    
+    .carousel-control-next {
+        margin-right: 0;
+    }
+    .carousel-indicators {
+        margin-bottom: -60px;
+        margin-left: 10%;
+    }
+}
