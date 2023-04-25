@@ -22,3 +22,29 @@ navItem.forEach(item => {
         }
     })
 })
+
+//animar itens da tela com o .data-anime//
+
+const item = document.querySelectorAll("[data-anime]");
+
+const animeScroll = () => {
+
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85 ;
+
+    // se a distância da tela pro topo for maior que a distância do meu elemento, a animação será acinada// 
+
+    item.forEach(Element => {
+        if (windowTop > Element.offsetTop){
+            Element.classList.add('animate');
+        } else {
+            Element.classList.remove("animate");
+        }
+    })
+
+}
+
+animeScroll()
+
+window.addEventListener("scroll", ()=>{
+    animeScroll();
+})
